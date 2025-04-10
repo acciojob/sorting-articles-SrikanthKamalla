@@ -24,8 +24,7 @@ const sortedBands = bands.sort((a, b) => {
   const nameB = stripArticle(b).toLowerCase();
   return nameA.localeCompare(nameB);
 });
-
-const ul = document.querySelector("ul");
+const ul = document.getElementById("band");
 sortedBands.forEach((band) => {
   const li = document.createElement("li");
   li.textContent = band;
